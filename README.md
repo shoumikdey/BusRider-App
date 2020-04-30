@@ -5,6 +5,8 @@
 
 ### Problem Statement
 ----------------------------------
+**Link to deployed project: https://busrider.herokuapp.com/ **
+
 * How to make people use public transport more and also promote carpooling
 
 The solution that we came up with is an BusRider- an web-app which keeps track of the number of Passengers travelling on the bus.
