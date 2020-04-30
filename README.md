@@ -18,7 +18,7 @@ The solution that we came up with is an BusRider- an web-app which keeps track o
 
 #### Architecture Diagram
 
-![Flowchart]Flowchart.png
+![Flowchart](Flowchart.png)
 
 #### Technical Description
 
