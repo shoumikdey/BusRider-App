@@ -1,11 +1,9 @@
-## TechTeam_returns - Transport
+# TechTeam_returns - Transport
 
-The participants are required to use this repository as a template and create a private Github repository under their own username (Single repository per team). The following created sections in this README.md need to be duly filled, highlighting the denoted points for the solution/implementation. Please feel free to create further sub-sections in this markdown, the idea is to understand the gist of the components in a singular document.
-
-### Project Overview
+## Project Overview
 ----------------------------------
 
-# Problem Statement
+### Problem Statement
 ----------------------------------
 * How to make people use public transport more and also promote carpooling
 
