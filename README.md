@@ -31,6 +31,6 @@ Software Required:-
 ### Team Members
 ----------------------------------
 
-Shoumik Dey  - shoumikdey123@gmail.com
-Arya Das     - aryadas98@gmail.com
-Rishab Ghosh - rishabghosh1222@gmail.com
+Shoumik Dey  - shoumikdey123@gmail.com\
+Arya Das     - aryadas98@gmail.com\
+Rishab Ghosh - rishabghosh1222@gmail.com\
