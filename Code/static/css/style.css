@@ -1,0 +1,46 @@
+.masthead {
+    height: 35em;
+    background-color: rgba(0,0,0,.3);
+    /*background-image: url('https://source.unsplash.com/OG5Ww1SWktM/1920x1080');*/
+    background-image: url('/static/images/masthead-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+#omnisearch {
+    max-width: 35em;
+}
+
+img.landing-icon {
+    height: 4em;
+}
+
+.stretch-content, .stretch-content .row {
+    min-height: 42em;
+}
+
+.timeline-element {
+    border-left: 5px solid var(--dark);
+    padding: 1em;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.timeline-element::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    border: 5px solid var(--dark);
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    left: -0.9em;
+    background-color: var(--light);
+    z-index: 1;
+}
+
+.timeline .visited::after {
+    background-color: var(--dark);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/bus.png" type="image/png" sizes="16x16">
+    <meta name="theme-color" content="#343A40"/>
+    <title>Ticket Confirmation | BusRider</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"><a class="nav-link navbar-brand" href="/"><img src="/static/images/bus.png" style="height:1em;"><span class="ml-2">Bus Rider</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="collapsible">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/book/">Book</a></li>
+          <li class="nav-item"><a class="nav-link" href="/retrieve_booking/">Retrieve Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="/view_count/">Bus Seating Status</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tracker/">Tracker</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="my-5"></div>
+    <div class="container stretch-content">
+      <div class="row h-100 align-items-center">
+        <div class="col-sm-4">
+            <h2>Ticket Confirmed ✔</h2>
+            <p>Please note down reference no.</p>
+
+            <style>
+                #confirmation-table th, #confirmation-table td {
+                    vertical-align: middle;
+                }
+            </style>
+
+            <table class="table table-borderless table-sm" id="confirmation-table">
+                <tr>
+                    <th>Reference No:</th>
+                    <td>{{ data['ref'] }}</td>
+                </tr>
+                <tr>
+                    <th>Bus No:</th>
+                    <td>{{ data['bus'] }}</td>
+                </tr>
+                <tr>
+                    <th>Origin:</th>
+                    <td>{{ data['origin'] }}</td>
+                </tr>
+                <tr>
+                    <th>Destination:</th>
+                    <td>{{ data['dest'] }}</td>
+                </tr>
+                <tr>
+                    <th>Fare:</th>
+                    <td>₹{{ data['cost'] }}</td>
+                </tr>
+            </table>
+            <div style="display:flex">
+                <div class="col-sm-6">
+                    <a class="btn btn-primary" href="/">Go Home</a>
+                </div>
+                <div class="col-sm-6">
+                    <a class="btn btn-primary" href="/book/">Book Another</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid bg-dark text-white py-4">
+      <div class="row">
+        <div class="col text-center"><span>Copyright © 2020. BusRider</span></div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
